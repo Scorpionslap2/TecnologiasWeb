@@ -11,7 +11,7 @@ import { MatSelectModule } from '@angular/material/select';
 import { MatRadioModule } from '@angular/material/radio';
 import { MatCardModule } from '@angular/material/card';
 import { ReactiveFormsModule } from '@angular/forms';
-import { PrincipalComponent } from './principal/principal.component';
+import { AcercadeComponent } from './acerca de/acercade.component';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatIconModule } from '@angular/material/icon';
@@ -21,7 +21,7 @@ import { MatListModule } from '@angular/material/list';
   declarations: [
     AppComponent,
     FormularioComponent,
-    PrincipalComponent
+    AcercadeComponent
   ],
   imports: [
     BrowserModule,

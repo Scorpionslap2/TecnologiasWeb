@@ -4,11 +4,11 @@ import { Observable } from 'rxjs';
 import { map, shareReplay } from 'rxjs/operators';
 
 @Component({
-  selector: 'app-principal',
-  templateUrl: './principal.component.html',
-  styleUrls: ['./principal.component.css']
+  selector: 'app-acercade',
+  templateUrl: './acercade.component.html',
+  styleUrls: ['./acercade.component.css']
 })
-export class PrincipalComponent {
+export class AcercadeComponent {
   private breakpointObserver = inject(BreakpointObserver);
 
   isHandset$: Observable<boolean> = this.breakpointObserver.observe(Breakpoints.Handset)

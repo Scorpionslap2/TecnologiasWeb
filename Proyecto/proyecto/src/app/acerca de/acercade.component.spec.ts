@@ -6,15 +6,15 @@ import { MatListModule } from '@angular/material/list';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatToolbarModule } from '@angular/material/toolbar';
 
-import { PrincipalComponent } from './principal.component';
+import { AcercadeComponent } from './acercade.component';
 
 describe('PrincipalComponent', () => {
-  let component: PrincipalComponent;
-  let fixture: ComponentFixture<PrincipalComponent>;
+  let component: AcercadeComponent;
+  let fixture: ComponentFixture<AcercadeComponent>;
 
   beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
-      declarations: [PrincipalComponent],
+      declarations: [AcercadeComponent],
       imports: [
         NoopAnimationsModule,
         MatButtonModule,
@@ -27,7 +27,7 @@ describe('PrincipalComponent', () => {
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(PrincipalComponent);
+    fixture = TestBed.createComponent(AcercadeComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
