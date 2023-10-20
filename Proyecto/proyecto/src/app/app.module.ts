@@ -16,13 +16,15 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
+import { RegistrarseComponent } from './registrarse/registrarse.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     AcercadeComponent,
     ContactoComponent,
-    IngresarComponent
+    IngresarComponent,
+    RegistrarseComponent
   ],
   imports: [
     BrowserModule,
