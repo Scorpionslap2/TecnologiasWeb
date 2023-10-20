@@ -1,0 +1,83 @@
+/* Estilos generales para el cuerpo de la página */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #111; /* Fondo oscuro */
+    color: white; /* Texto en blanco */
+}
+
+/* Estilos para el encabezado */
+header {
+    background-color: #333;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    max-height: 50px;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+}
+
+.menu li {
+    margin-right: 20px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.user-actions button {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+/* Estilos para la sección de redes sociales */
+.social {
+    background-color: #333; /* Fondo oscuro */
+    color: white; /* Texto en blanco */
+    padding: 50px 0;
+    text-align: center;
+}
+
+.social-title {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.social-icons {
+    margin: 20px 0;
+}
+
+.social-icon {
+    display: inline-block;
+    margin: 0 10px;
+    text-align: center;
+}
+
+.social-icon img {
+    width: 40px;
+    height: 40px;
+}
+
+.copyright {
+    font-size: 14px;
+}

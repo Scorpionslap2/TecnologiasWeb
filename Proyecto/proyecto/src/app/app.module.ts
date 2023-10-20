@@ -17,6 +17,7 @@ import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
 import { RegistrarseComponent } from './registrarse/registrarse.component';
+import { CalendarioComponent } from './calendario/calendario.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { RegistrarseComponent } from './registrarse/registrarse.component';
     AcercadeComponent,
     ContactoComponent,
     IngresarComponent,
-    RegistrarseComponent
+    RegistrarseComponent,
+    CalendarioComponent
   ],
   imports: [
     BrowserModule,
