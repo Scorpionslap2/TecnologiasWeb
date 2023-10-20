@@ -50,6 +50,7 @@ nav {
     cursor: pointer;
 }
 
+
 /* Estilos para la sección de redes sociales */
 .social {
     background-color: #333; /* Fondo oscuro */
@@ -82,12 +83,19 @@ nav {
     font-size: 14px;
 }
 
-/* Estilos para el formulario de contacto */
+/* Estilos para la sección de formulario de contacto */
 .formulario {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 50px;
+}
+
+.formulario h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 20px 0;
+    color: #333; /* Texto en gris oscuro */
 }
 
 form {
@@ -134,7 +142,7 @@ button {
     height: auto;
 }
 
-/* Estilos para la sección de oficinas */
+/* Estilos para la sección de nuestras oficinas */
 .oficinas {
     text-align: center;
     padding: 50px 0;
@@ -167,6 +175,6 @@ button {
 }
 
 .mapa {
-    /* Estilos para el mapa, como el tamaño, posición, etc. */
-    /* Agrega aquí tu código para incrustar un mapa, como Google Maps */
+    /* Agrega aquí tus estilos para el mapa, como el tamaño, posición, etc. */
+    /* Puedes incrustar un mapa, como Google Maps, en esta área */
 }
