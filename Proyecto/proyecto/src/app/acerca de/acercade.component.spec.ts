@@ -8,7 +8,7 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 
 import { AcercadeComponent } from './acercade.component';
 
-describe('PrincipalComponent', () => {
+describe('AcercadeComponent', () => {
   let component: AcercadeComponent;
   let fixture: ComponentFixture<AcercadeComponent>;
 
