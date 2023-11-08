@@ -1,20 +1,21 @@
-const express = require('express');
+const express = require("express");
 const app = express();
-const morgan = require('morgan');
+const mongoose = require("mongoose");
 
-const { mongoose } = require('./database');
+require("dotenv").config();
 
-//settings
-app.set('port', 3000);
+app.get("/", (req, res) => res.send("Server is up and running"));
 
-//middlewares
-app.use(morgan('dev'));
-app.use(express.json());
+const PORT = process.env.PORT || 5000;
+app.listen(PORT, () => console.log(`Server is running on port ${PORT}`));
 
-//routes
-app.use('/api/usuarios', require('./routes/usuario.routes'));
+app.use(express.json())
 
-//start
-app.listen(app.get('port'), ()=>{
-    console.log('sever on port', app.get('port'));
-})
+mongoose
+  .connect(process.env.MONGO_PROD_URI)
+  .then(() => console.log("Database connected!"))
+  .catch(err => console.log(err));
+
+app.use("/api/usuarios", require("./routes/usuario.routes"));
+
+module.exports = app;
