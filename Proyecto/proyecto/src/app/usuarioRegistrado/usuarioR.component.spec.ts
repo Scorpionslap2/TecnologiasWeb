@@ -6,15 +6,15 @@ import { MatListModule } from '@angular/material/list';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatToolbarModule } from '@angular/material/toolbar';
 
-import { CalendarioComponent } from './calendario.component';
+import { UsuarioRComponent } from './usuarioR.component';
 
-describe('CalendarioComponent', () => {
-  let component: CalendarioComponent;
-  let fixture: ComponentFixture<CalendarioComponent>;
+describe('UsuarioRComponent', () => {
+  let component: UsuarioRComponent;
+  let fixture: ComponentFixture<UsuarioRComponent>;
 
   beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
-      declarations: [CalendarioComponent],
+      declarations: [UsuarioRComponent],
       imports: [
         NoopAnimationsModule,
         MatButtonModule,
@@ -27,7 +27,7 @@ describe('CalendarioComponent', () => {
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(CalendarioComponent);
+    fixture = TestBed.createComponent(UsuarioRComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

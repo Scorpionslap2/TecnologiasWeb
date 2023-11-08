@@ -10,13 +10,13 @@
                 <img src="logo.png" alt="Logo de la empresa">
             </div>
             <ul class="menu">
-                <li><a href="#contacto">Contacto</a></li>
-                <li><a href="#acerca-de">Acerca de</a></li>
+                <li><a [routerLink]="['/contacto']">Contacto</a></li>
+                <li><a [routerLink]="['/acerca-de']">Acerca de</a></li>
             </ul>
         </nav>
         <div class="user-actions">
-            <button>Ingresar</button>
-            <button>Empieza Ahora</button>
+            <button [routerLink]="['/ingresar']">Ingresar</button>
+            <button [routerLink]="['/registrarse']">Empieza Ahora</button>
         </div>
     </header>
 
@@ -27,7 +27,7 @@
         <p class="promotional-text">Agenda citas con especialistas de forma rápida y sencilla en nuestra 
             página web. Nuestra aplicación notifica, cobra en línea, genera boletas y organiza tu calendario 
             automáticamente. Simplifica tu vida y reserva tus consultas con nosotros hoy.</p>
-        <button>Empieza Ahora</button>
+        <button [routerLink]="['/registrarse']">Empieza Ahora</button>
     </section>
     <section class="benefits">
       <div class="benefits-text">
@@ -59,7 +59,7 @@
                 tu bandeja de entrada, incluyendo actualizaciones sobre nuestros servicios, consejos de especialistas y 
                 ofertas especiales. Únete a nuestra comunidad de suscriptores y sé el primero en recibir información valiosa. 
                 No dejes pasar esta oportunidad para estar informado y mejorar tu vida.</p>
-            <button>Inscribirse</button>
+            <button [routerLink]="['/registrarse']">Inscribirse</button>
         </div>
     </div>
 </section>

@@ -81,3 +81,52 @@ nav {
 .copyright {
     font-size: 14px;
 }
+
+/* Estilos para la sección de reserva */
+.reserva {
+    text-align: center;
+    padding: 50px 0;
+}
+
+h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 20px 0;
+    color: #333; /* Texto en gris oscuro */
+}
+
+/* Estilos para la lista de reservas */
+.reservation-list {
+    padding: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #333;
+    color: white;
+}
+
+button {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+i.material-icons {
+    font-size: 24px;
+    color: #007bff;
+}

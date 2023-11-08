@@ -11,13 +11,13 @@
                 <img src="logo.png" alt="Logo de la empresa">
             </div>
             <ul class="menu">
-                <li><a href="#contacto">Contacto</a></li>
-                <li><a href="#acerca-de">Acerca de</a></li>
+                <li><a [routerLink]="['/contacto']">Contacto</a></li>
+                <li><a [routerLink]="['/acerca-de']">Acerca de</a></li>
             </ul>
         </nav>
         <div class="user-actions">
-            <button>Ingresar</button>
-            <button>Empieza Ahora</button>
+            <button [routerLink]="['/ingresar']">Ingresar</button>
+            <button [routerLink]="['/registrarse']">Empieza Ahora</button>
         </div>
     </header>
 
