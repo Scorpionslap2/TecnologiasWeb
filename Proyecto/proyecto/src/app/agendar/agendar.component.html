@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="agendar.component.css">
+    <title>Agendar</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="logo.png" alt="Logo de la empresa">
+            </div>
+            <ul class="menu">
+                <li><a [routerLink]="['/contacto']">Contacto</a></li>
+                <li><a [routerLink]="['/acerca-de']">Acerca de</a></li>
+                <li><a [routerLink]="['/agendar']">Agendar</a></li>
+                <li><a [routerLink]="['/miAgenda']">Mi agenda</a></li>
+            </ul>
+        </nav>
+        <div class="user-actions">
+            <i class="material-icons">person</i>
+        </div>
+    </header>
+
+    
+    <section class="reserva">
+        <h2>Hacer Reserva</h2>
+        <form>
+            <div class="input-group">
+                <label for="profesion">Seleccione una Profesión:</label>
+                <select id="profesion" name="profesion" required>
+                    <option value="profesion1">Profesion 1</option>
+                    <option value="profesion2">Profesion 2</option>
+                    <option value="profesion3">Profesion 3</option>
+                </select>
+            </div>
+            <div class="input-group">
+                <label for="profesional">Seleccione un Profesional:</label>
+                <select id="profesional" name="profesional" required>
+                    <option value="profesional1">Profesional 1</option>
+                    <option value="profesional2">Profesional 2</option>
+                    <option value="profesional3">Profesional 3</option>
+                </select>
+            </div>
+            <div class="input-group">
+                <label for="fecha">Fecha de Reserva:</label>
+                <input type="date" id="fecha" name="fecha" required>
+            </div>
+            <div class="input-group">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+            </div>
+            <div class="input-group">
+                <label for="rut">RUT (Rol Único Tributario):</label>
+                <input type="text" id="rut" name="rut" required>
+            </div>
+            <div class="input-group">
+                <label for="telefono">Número de Teléfono:</label>
+                <input type="tel" id="telefono" name="telefono" required>
+            </div>
+            <div class="input-group">
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <button type="submit">Confirmar Reserva</button>
+        </form>
+    </section>
+
+    <section class="social">
+        <h2 class="social-title">Síguenos en Redes Sociales</h2>
+        <div class="social-icons">
+            <a href="#" class="social-icon"><img src="facebook-icon.png" alt="Facebook"></a>
+            <a href="#" class="social-icon"><img src="twitter-icon.png" alt="Twitter"></a>
+            <a href="#" class="social-icon"><img src="instagram-icon.png" alt="Instagram"></a>
+            <a href="#" class="social-icon"><img src="linkedin-icon.png" alt="LinkedIn"></a>
+        </div>
+        <p class="copyright">&copy; 2023 Team. Todos los derechos reservados.</p>
+    </section>
+</body>
+    </html>

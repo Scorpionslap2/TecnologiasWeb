@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <link rel="stylesheet" type="text/css" href="contacto.component.css">
-    <title>Contacto</title>
+    <link rel="stylesheet" type="text/css" href="registrarse.component.css">
+    <title>Registrarse</title>
 </head>
 <body>
     <header>
@@ -21,8 +21,8 @@
         </div>
     </header>
 
-    <section class="formulario">
-        <title>Contacto</title>
+    <section class="registro">
+        <h2>Empieza ahora y Registrate</h2>
         <form>
             <div class="input-group">
                 <label for="nombre">Nombre:</label>
@@ -33,41 +33,24 @@
                 <input type="email" id="email" name="email" required>
             </div>
             <div class="input-group">
-                <label for="asunto">Asunto:</label>
-                <input type="text" id="asunto" name="asunto" required>
+                <label for="telefono">Número de Teléfono:</label>
+                <input type="tel" id="telefono" name="telefono" required>
             </div>
             <div class="input-group">
-                <label for="mensaje">Mensaje:</label>
-                <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+                <label for="reserva">Solicitar Reserva:</label>
+                <input type="checkbox" id="reserva" name="reserva">
             </div>
-            <button type="submit">Enviar Mensaje</button>
+            <div class="input-group">
+                <label for="profesion">Seleccionar Profesión:</label>
+                <select id="profesion" name="profesion">
+                    <option value="ninguna">Ninguna</option>
+                    <option value="profesion1">Profesión 1</option>
+                    <option value="profesion2">Profesión 2</option>
+                    <option value="profesion3">Profesión 3</option>
+                </select>
+            </div>
+            <button type="submit">Registrarse</button>
         </form>
-        <div class="imagen">
-            <img src="contacto-imagen.png" alt="Imagen de contacto">
-        </div>
-    </section>
-
-    <section class="oficinas">
-        <h2>Nuestras Oficinas</h2>
-        <div class="oficina">
-            <h3>Sucursal Principal</h3>
-            <p>Dirección: Calle Principal, Ciudad</p>
-            <p>Teléfono: (123) 456-7890</p>
-        </div>
-        <div class="oficina">
-            <h3>Sucursal Secundaria</h3>
-            <p>Dirección: Calle Secundaria, Ciudad</p>
-            <p>Teléfono: (123) 456-7891</p>
-        </div>
-    </section>
-
-    <section class="encuentranos">
-        <h2>Encuéntranos</h2>
-        <p>Visítanos en nuestra sede principal:</p>
-        <div class="mapa">
-            <!-- Agrega aquí tu código para incrustar un mapa, como Google Maps -->
-        </div>
-        <p>Dirección: Calle Principal, Ciudad</p>
     </section>
 
     <section class="social">

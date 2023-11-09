@@ -11,16 +11,22 @@ import { MatCardModule } from '@angular/material/card';
 import { ReactiveFormsModule } from '@angular/forms';
 import { AcercadeComponent } from './acerca de/acercade.component';
 import { ContactoComponent } from './contacto/contacto.component';
+import { IngresarComponent } from './ingresar/ingresar.component';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
+import { RegistrarseComponent } from './registrarse/registrarse.component';
+import { CalendarioComponent } from './calendario/calendario.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     AcercadeComponent,
-    ContactoComponent
+    ContactoComponent,
+    IngresarComponent,
+    RegistrarseComponent,
+    CalendarioComponent
   ],
   imports: [
     BrowserModule,

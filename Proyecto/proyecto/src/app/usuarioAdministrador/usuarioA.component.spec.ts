@@ -6,15 +6,15 @@ import { MatListModule } from '@angular/material/list';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatToolbarModule } from '@angular/material/toolbar';
 
-import { ContactoComponent } from './contacto.component';
+import { UsuarioAComponent } from './usuarioA.component';
 
-describe('ContactoComponent', () => {
-  let component: ContactoComponent;
-  let fixture: ComponentFixture<ContactoComponent>;
+describe('UsuarioAComponent', () => {
+  let component: UsuarioAComponent;
+  let fixture: ComponentFixture<UsuarioAComponent>;
 
   beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
-      declarations: [ContactoComponent],
+      declarations: [UsuarioAComponent],
       imports: [
         NoopAnimationsModule,
         MatButtonModule,
@@ -27,7 +27,7 @@ describe('ContactoComponent', () => {
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(ContactoComponent);
+    fixture = TestBed.createComponent(UsuarioAComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
