@@ -25,21 +25,17 @@
     
     <section class="reserva">
         <h2>Hacer Reserva</h2>
-        <form>
+        <form (submit)="confirmarReserva()">
             <div class="input-group">
                 <label for="profesion">Seleccione una Profesión:</label>
-                <select id="profesion" name="profesion" required>
-                    <option value="profesion1">Profesion 1</option>
-                    <option value="profesion2">Profesion 2</option>
-                    <option value="profesion3">Profesion 3</option>
+                <select id="profesion" name="profesion" [(ngModel)]="selectedProfession" required>
+                    <option *ngFor="let profession of professions" [value]="profession.id">{{ profession.name }}</option>
                 </select>
             </div>
             <div class="input-group">
                 <label for="profesional">Seleccione un Profesional:</label>
-                <select id="profesional" name="profesional" required>
-                    <option value="profesional1">Profesional 1</option>
-                    <option value="profesional2">Profesional 2</option>
-                    <option value="profesional3">Profesional 3</option>
+                <select id="profesional" name="profesional" [(ngModel)]="selectedProfessional" required>
+                    <option *ngFor="let professional of professionals" [value]="professional.id">{{ professional.name }}</option>
                 </select>
             </div>
             <div class="input-group">
