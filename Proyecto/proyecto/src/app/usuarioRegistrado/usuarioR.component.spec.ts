@@ -5,8 +5,11 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatToolbarModule } from '@angular/material/toolbar';
+import { RouterModule } from '@angular/router';
 
 import { UsuarioRComponent } from './usuarioR.component';
+import { AppRoutingModule } from '../app-routing.module';
+import { Router } from 'express';
 
 describe('UsuarioRComponent', () => {
   let component: UsuarioRComponent;
@@ -16,6 +19,8 @@ describe('UsuarioRComponent', () => {
     TestBed.configureTestingModule({
       declarations: [UsuarioRComponent],
       imports: [
+        AppRoutingModule,
+        RouterModule,
         NoopAnimationsModule,
         MatButtonModule,
         MatIconModule,

@@ -5,6 +5,9 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatToolbarModule } from '@angular/material/toolbar';
+import { RouterModule } from '@angular/router';
+
+import { AppRoutingModule } from '../app-routing.module';
 
 import { ContactoComponent } from './contacto.component';
 
@@ -16,6 +19,8 @@ describe('ContactoComponent', () => {
     TestBed.configureTestingModule({
       declarations: [ContactoComponent],
       imports: [
+        AppRoutingModule,
+        RouterModule,
         NoopAnimationsModule,
         MatButtonModule,
         MatIconModule,

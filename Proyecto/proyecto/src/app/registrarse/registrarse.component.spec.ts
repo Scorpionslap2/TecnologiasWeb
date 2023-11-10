@@ -5,8 +5,10 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatToolbarModule } from '@angular/material/toolbar';
+import { RouterModule } from '@angular/router';
 
 import { RegistrarseComponent } from './registrarse.component';
+import { AppRoutingModule } from '../app-routing.module';
 
 describe('RegistrarseComponent', () => {
   let component: RegistrarseComponent;
@@ -16,6 +18,8 @@ describe('RegistrarseComponent', () => {
     TestBed.configureTestingModule({
       declarations: [RegistrarseComponent],
       imports: [
+        AppRoutingModule,
+        RouterModule,
         NoopAnimationsModule,
         MatButtonModule,
         MatIconModule,

@@ -1,4 +1,7 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
+import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
+import { Observable } from 'rxjs';
+import { map, shareReplay } from 'rxjs/operators';
 
 @Component({
   selector: 'app-usuarioR',
@@ -6,6 +9,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./usuarioR.component.css']
 })
 export class UsuarioRComponent {
+  private breakpointObserver = inject(BreakpointObserver);
+
+  isHandset$: Observable<boolean> = this.breakpointObserver.observe(Breakpoints.Handset)
+    .pipe(
+      map(result => result.matches),
+      shareReplay()
+    );
   // Debes definir una matriz de reservas con la estructura que estés utilizando en tu aplicación
   reservations: Reservation[] = [
     { name: 'Usuario 1', date: '2023-01-15' },

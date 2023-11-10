@@ -1,4 +1,5 @@
 import { NgModule } from '@angular/core';
+import { RouterModule } from '@angular/router';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -17,7 +18,6 @@ import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
 import { RegistrarseComponent } from './registrarse/registrarse.component';
-import { CalendarioComponent } from './calendario/calendario.component';
 
 @NgModule({
   declarations: [
@@ -25,11 +25,11 @@ import { CalendarioComponent } from './calendario/calendario.component';
     AcercadeComponent,
     ContactoComponent,
     IngresarComponent,
-    RegistrarseComponent,
-    CalendarioComponent
+    RegistrarseComponent
   ],
   imports: [
     BrowserModule,
+    RouterModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     MatInputModule,
